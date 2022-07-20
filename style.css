@@ -2,18 +2,23 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
-/* main {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-} */
+}
 section {
   margin-top: 40px;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
+.header-section {
+  margin-bottom: 130px;
+}
+
 .container {
   display: flex;
   background-color: #161616;
@@ -65,4 +70,111 @@ section {
 }
 .fa-solid {
   padding-left: 5px;
+}
+
+/* 2nd section starts */
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left-side-part {
+  display: flex;
+  flex-direction: column;
+  background-color: #161616;
+  width: 312px;
+  height: 300px;
+  border-radius: 10px;
+  /* margin-right: 24px; */
+}
+
+.left-side-part a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  margin: 30px 30px 0px 30px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#blog-color {
+  background-color: crimson;
+}
+/* #right-side {
+  margin-right: 10px;
+} */
+.right-side-part {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 8px;
+}
+
+.card-1 {
+  margin-right: 5px;
+  margin-left: 5px;
+  /* width: 50%; */
+  margin-bottom: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.247);
+  border-radius: 12px;
+}
+
+.card-1 img {
+  width: 260px;
+  height: 150px;
+}
+.cart-content {
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+.cart-content p {
+  font-size: 15px;
+  font-weight: 700;
+}
+.transfer-btn {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 10px 3px 10px;
+}
+
+.icon-content-section {
+  display: flex;
+}
+.icon-content {
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  margin-right: 5%;
+}
+.icon-content img {
+  width: 25px;
+  height: 25px;
+  padding-right: 20%;
+}
+
+.footer-section {
+  background-color: #161616;
+  text-align: center;
+  color: #ffffff;
+  padding: 90px;
+  margin-top: 100px;
+}
+
+.footer-section span {
+  font-size: 40px;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  margin: 15px;
+  color: #b9b9b9;
+  font-size: 16px;
 }
