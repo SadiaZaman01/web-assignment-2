@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500&family=Roboto+Mono&display=swap");
 
+/* common section starts */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
+
+/* header section starts */
 
 main {
   display: flex;
@@ -15,6 +18,7 @@ section {
   margin-left: 100px;
   margin-right: 100px;
 }
+
 .header-section {
   margin-bottom: 80px;
 }
@@ -42,14 +46,40 @@ section {
   line-height: 80px;
   width: 531px;
   height: 240px;
+  transition: color 3s, transform 3s;
+}
+
+.half-width h1:hover {
+  color: indianred;
+  transform: scale(1.1);
 }
 
 .half-width p {
   margin-top: 20px;
-  margin-bottom: 33px;
+  margin-bottom: 40px;
   color: #ffffff;
   font-size: 16px;
 }
+
+.link-button {
+  text-decoration: none;
+  color: cornsilk;
+  background-color: crimson;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: padding 3s, background-color 3s;
+}
+
+.link-button:hover {
+  background-color: rgb(126, 9, 5);
+  padding: 20px 80px;
+}
+
+.fa-solid {
+  padding-left: 5px;
+}
+
 .img-width {
   width: 50%;
   padding-top: 33px;
@@ -60,19 +90,9 @@ section {
   width: 100%;
 }
 
-.link-button {
-  text-decoration: none;
-  color: cornsilk;
-  background-color: crimson;
-  padding: 10px 25px;
-  border-radius: 5px;
-  font-size: 20px;
-}
-.fa-solid {
-  padding-left: 5px;
-}
+/* header section ends  */
 
-/* 2nd section starts */
+/* 2nd part main section starts */
 .main-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -85,7 +105,6 @@ section {
   width: 312px;
   height: 300px;
   border-radius: 10px;
-  /* margin-right: 24px; */
 }
 
 .left-side-part a {
@@ -118,13 +137,7 @@ section {
   padding: 30px 33px 0px 33px;
   text-align: center;
 }
-.cart-article h3 {
-  font-size: 18px;
-}
-.cart-article p {
-  font-size: 15px;
-  color: #4d4d4d;
-}
+
 .cart-img-content {
   display: flex;
   align-items: center;
@@ -139,6 +152,18 @@ section {
 .cart-gap p {
   font-size: 16px;
 }
+
+.cart-article h3 {
+  font-size: 18px;
+}
+.cart-article p {
+  font-size: 15px;
+  color: #4d4d4d;
+}
+
+/* 2nd part main section starts */
+
+/* footer section start  */
 
 .footer-section {
   background-color: #161616;
@@ -164,3 +189,12 @@ hr {
   color: #b9b9b9;
   font-size: 16px;
 }
+
+.fa-brands {
+  margin-top: 30px;
+  padding: 5px;
+  font-size: 20px;
+  color: rgb(97, 107, 126);
+}
+
+/* footer section ends  */
